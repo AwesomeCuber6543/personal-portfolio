@@ -1,0 +1,52 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;  /* Resets default margin */
+    padding: 0;  /* Resets default padding */
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+}
+
+.wrapper {
+    display: flex; 
+    justify-content: center;  
+    align-items: center;  
+    min-height: 100vh;  
+}
+
+.static-txt {
+    font-size: 30px;
+    color: red;
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+.dynamic-txts {
+    display: flex;  
+    flex-direction: column;  
+    list-style-type: none;  
+    padding: 0;
+    margin: 0;
+}
+
+.dynamic-txts li:first-child {
+    align-self: flex-start;  /* Aligns the first item to the start of the flex container */
+}
+.dynamic-txts li:not(:first-child) {
+    margin-top: 10px;  /* Adds space between the first item and subsequent items */
+}
+
+.dynamic-txts li {
+    margin-right: 10px;
+    text-align: left; /* Space between list items */
+}
+
+
+
+
+
+
+

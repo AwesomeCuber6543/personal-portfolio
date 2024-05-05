@@ -7,7 +7,7 @@ body {
 }
 
 
-.nav {
+/* .nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -27,13 +27,24 @@ body {
   float: right;
   font-size: 20px;
   padding: 15px;
+  color: blue;
+}
+
+.nav a{
+  text-decoration: none;
+  color: yellow;
 }
 
 .site-title{
   font-size: 30px;
   padding-left: 20px;
 }
+  text-decoration: none;
+} */
 
+.Home{
+  align-items: center;
+}
 
 
 @media (prefers-reduced-motion: no-preference) {
