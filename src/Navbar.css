@@ -1,0 +1,73 @@
+.nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #282c34; /* Darker shade for a modern look */
+    overflow-x: hidden;
+    transition: width 0.5s ease; /* Smooth transition for the width */
+    padding-top: 60px;
+    color: #ffffff; /* Ensuring text is white for better readability */
+    box-shadow: 3px 0 15px rgba(0,0,0,0.2);
+}
+
+.nav.open {
+    width: 250px; /* Adjust width as needed */
+}
+
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav ul a {
+    padding: 15px 20px;
+    text-decoration: none;
+    font-size: 18px; /* Slightly larger font for readability */
+    color: #ffffff;
+    display: block;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transitions for hover effects */
+}
+
+.nav ul a:hover {
+    background-color: #4caf50; /* A fresh green hover effect */
+    color: #000000; /* Text color changes to black for contrast */
+}
+
+.menu-button {
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    z-index: 2;
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 20px; /* Rounded corners for the button */
+    font-size: 16px;
+    transition: background-color 0.3s; /* Smooth transition for hover */
+}
+
+.menu-button:hover {
+    background-color: #555; /* Darker shade when hovered */
+}
+
+
+.site-title {
+    font-size: 30px;
+    padding-left: 20px;  /* Adjust this to match the left padding of your list items if needed */
+    text-decoration: none;
+    color: white;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 10px 20px;  /* Adjust top/bottom padding to vertically center and match list items */
+    margin-top: 0;  /* Ensures there's no additional top margin */
+}
+
+
+
