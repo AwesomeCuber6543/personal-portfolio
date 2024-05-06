@@ -3,9 +3,9 @@
 
 * {
     font-family: "Poppins", sans-serif;
-    margin: 0;  /* Resets default margin */
-    padding: 0;  /* Resets default padding */
-    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+    margin: 0;  
+    padding: 0;  
+    box-sizing: border-box; 
 }
 
 .wrapper {
@@ -15,12 +15,62 @@
     min-height: 100vh;  
 }
 
+.wrapper .dynamic-txts{
+    margin-left: 10px;
+    overflow: hidden;
+    display: flex;
+}
+
+
+
+.dynamic-txts li::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    border-left: 2px solid red;
+    animation: typing 3s steps(15) infinite;
+    overflow: hidden;
+}
+
+
+
+@keyframes typing {
+    40%,
+    60% {
+        left: calc(100%);
+    }
+    100%{
+        left: 0;
+    }
+    
+}
+
+.dynamic-txts li {
+    list-style: none;
+    color: blue;
+    font-size: 100%;
+    position: relative;
+    top: 0;
+    animation: slide 12s steps(4) infinite;
+    display: flex;
+}
+
+@keyframes slide {
+    100%{
+        top: -222px;
+    }
+    
+}
+
 .static-txt {
     font-size: 30px;
     color: red;
     display: flex;
     justify-content: center;
-    
+    display: flex;
 }
 
 
@@ -33,15 +83,15 @@
 }
 
 .dynamic-txts li:first-child {
-    align-self: flex-start;  /* Aligns the first item to the start of the flex container */
+    align-self: flex-start;  
 }
 .dynamic-txts li:not(:first-child) {
-    margin-top: 10px;  /* Adds space between the first item and subsequent items */
+    margin-top: 10px;  
 }
 
 .dynamic-txts li {
     margin-right: 10px;
-    text-align: left; /* Space between list items */
+    text-align: left; 
 }
 
 

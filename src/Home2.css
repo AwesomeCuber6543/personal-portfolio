@@ -1,0 +1,366 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* overflow: hidden; */
+  background-color: white; /* A light grey background for contrast */
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Modern, clean font */
+}
+
+.name {
+  font-size: 3rem; /* Larger font size for more impact */
+  font-weight: 300; /* Lighter font-weight for a more modern, sleek look */
+  color: #333; 
+  opacity: 0;
+  white-space: nowrap;
+  animation: fadeInAndSlide 2s forwards; /* Combined animations for slide and fade */
+}
+
+@keyframes fadeInAndSlide {
+  0% {
+    opacity: 0;
+    transform: translateX(150px); /* Start at initial position */
+  }
+  33% {
+    opacity: 1;
+    transform: translateX(150px); /* Stay at initial position */
+  }
+  33.1% {
+    opacity: 1;
+    transform: translateX(150px); /* Keep it steady for a delay */
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px); /* End position - adjust as necessary */
+  }
+}
+
+/* @keyframes slideIn {
+  0% {
+    transform: translateX(0px); 
+    opacity: 0;
+  }
+  50%{
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(-100px);
+    opacity: 1;
+  }
+} */
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100px); /* Start from the right */
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px); /* End at the normal position */
+    opacity: 1;
+  }
+}
+
+.titles {
+  margin-left: 10px; /* Adjust spacing after sliding */
+  opacity: 0;
+  font-size: 1.5rem; /* Stylish, larger font size */
+  color: #666; /* Lighter grey for the secondary text */
+  animation: fadeIn 1s 2s forwards; /* Delayed fade in for a dynamic effect */
+  font-weight: 300;
+  /* display: inline-block; */
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Adding a smooth transition for any hover effects in the container */
+/* .container:hover .name, .container:hover .titles {
+  transform: scale(1.05); 
+  transition: transform 0.3s ease-in-out;
+} */
+
+ /* .titles:hover {
+  transform: scale(1.05); 
+  transition: transform 0.3s ease-in-out;
+} */
+
+.Developer:hover{
+  color: rgb(177, 177, 177);
+  cursor: pointer;
+}
+
+.Researcher:hover{
+  color: rgb(177, 177, 177);
+  cursor: pointer;
+}
+
+.Innovator:hover{
+  color: rgb(177, 177, 177);
+  cursor: pointer;
+}
+
+/* .titles span { 
+  cursor: pointer; 
+  transition: transform 0.3s ease-in-out; 
+}
+
+.titles .Developer:hover, .titles .Researcher:hover, .titles .Innovator:hover {
+  transform: scale(1.1); 
+}
+
+.container .titles span.Developer:hover,
+.container .titles span.Researcher:hover,
+.container .titles span.Innovator:hover {
+  transform: scale(2);
+  transition: transform 0.3s ease-in-out;
+}  */
+
+
+/* .projects-section {
+  background-color: rgb(255, 255, 255);
+  color: Black;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.projects-grid {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.project-card {
+  width: 300px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 10px;
+  background: #333;  
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.05);  
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.view-all-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #444;
+  display: inline-block;
+  border-radius: 8px;
+}
+
+.view-all-button a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.view-all-button:hover {
+  background-color: #555;  
+}
+.research-section {
+  background-color: #1a1a1a;  
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.research-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;  
+}
+
+.research-card {
+  width: 300px;
+  background: #333;  
+  border: 1px solid #444;
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.research-card:hover {
+  transform: scale(1.05);  
+}
+
+.research-card img {
+  width: 100%;
+  height: 200px;  
+  object-fit: cover;  
+  border-radius: 8px;
+}
+
+.view-all-button {
+  margin-top: 30px;
+  padding: 10px 20px;
+  background-color: #555;
+  border-radius: 8px;
+}
+
+.view-all-button a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.view-all-button:hover {
+  background-color: #666;  
+}
+
+*/
+
+/* Base styles */
+/* ProjectCard.css */
+/* ProjectCard.css */
+/* Adjust the ProjectsSection container */
+
+.page-title {
+  text-align: center;
+  margin: 20px 0 40px; /* Adjust margin as necessary for spacing */
+  color: #2C3E50; /* Choose a color that fits your design */
+  font-size: 36px; /* Large font size for visibility */
+  font-weight: bold; /* Makes the text bold */
+}
+
+.projects-container {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Adds space between cards */
+  padding: 100px;
+}
+
+.project-card {
+  flex: 1 1 300px; /* Each card can grow and shrink but base at 300px */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  /* cursor: pointer; */
+  margin-top: 20px;
+}
+
+.project-card:hover {
+  transform: scale(1.05); /* Slightly larger on hover */
+}
+
+.card-container {
+  width: 100%;
+}
+
+.card-image {
+  width: 100%;
+  height: 200px; /* Fixed height for images */
+  object-fit: cover;
+}
+
+.card-content {
+  width: 100%;
+  padding: 15px;
+  background: white;
+  text-align: center;
+}
+
+.card-title {
+  margin: 5px 0;
+  font-size: 24px; /* Larger font size for title */
+  font-weight: bold; /* Bolder font for emphasis */
+}
+
+.card-subtitle {
+  margin: 5px 0;
+  font-size: 18px; /* Smaller font size for subtitle */
+  font-weight: 20px; /* Normal weight to be less prominent */
+  color: #555; /* Subdued color for stylistic differentiation */
+}
+
+.card-date {
+  margin: 5px 0;
+  font-size: 16px; /* Even smaller font size for date */
+  font-weight: normal; /* Lighter weight to emphasize temporal nature */
+  color: #777; /* Even more subdued color */
+}
+
+
+/* .card-description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; 
+  -webkit-box-orient: vertical;
+} */
+.card-description {
+  /* Removed properties that limited the display of text to 3 lines */
+  margin: 10px 0;
+}
+
+.view-all-button-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.view-all-button {
+  padding: 10px 20px;
+  background-color: #007BFF; /* Example blue color, change as needed */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.view-all-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+
+/* Home.css */
+
+.scroll-line {
+  position: fixed;
+  top: 100vh; /* Set the line just below the initial view height */
+  left: 10%; /* Not touching the edge */
+  width: 80%; /* Does not span the full width of the page */
+  height: 2px; /* Thin line */
+  background-color: black; /* The line is black */
+  display: none; /* Hidden by default */
+  z-index: 10; /* Ensure it's above other content */
+}
+
+/* Projects.css */
+
+/* .projects-container {
+  border-top: 2px solid black; 
+  padding-top: 20px; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  margin-top: 20px; 
+} */
+
+/* .projects-container .page-title{
+  justify-content: center;
+  align-items: center;
+} */
+
+

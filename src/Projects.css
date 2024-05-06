@@ -1,0 +1,79 @@
+/* Projects.css */
+.page-title {
+    text-align: center;
+    margin: 20px 0 40px; /* Adjust margin as necessary for spacing */
+    color: #2C3E50; /* Choose a color that fits your design */
+    font-size: 36px; /* Large font size for visibility */
+    font-weight: bold; /* Makes the text bold */
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Adds space between cards */
+    padding: 20px; /* Padding around the entire container */
+  }
+  
+  /* .project-card {
+    flex: 0 1 calc(33.333% - 20px); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    flex-direction: column;
+  } */
+
+  .project-card {
+    flex: 0 1 100%;  /* Take full width of the container */
+    max-width: 300px;  /* Maximum width of the card */
+    display: flex;
+    flex-direction: column;  /* Stack vertically for better mobile responsiveness */
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+  
+  .project-card:hover {
+    transform: scale(1.05); /* Slightly larger on hover */
+  }
+  
+  .card-container {
+    width: 100%;
+  }
+  
+  .card-image {
+    width: 100%;
+    height: min-content; /* Fixed height for images */
+    object-fit: cover;
+  }
+  
+  .card-content {
+    width: 100%;
+    padding: 15px;
+    background: white;
+    text-align: center;
+  }
+  
+  .card-title, .card-subtitle, .card-date {
+    margin: 5px 0;
+  }
+  
+  /* .card-description {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  } */
+
+  .card-description {
+    /* Removed properties that limited the display of text to 3 lines */
+    margin: 10px 0;
+}
+  

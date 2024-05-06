@@ -5,12 +5,13 @@
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #282c34; /* Darker shade for a modern look */
+    background-color: white;
     overflow-x: hidden;
     transition: width 0.5s ease; /* Smooth transition for the width */
     padding-top: 60px;
     color: #ffffff; /* Ensuring text is white for better readability */
     box-shadow: 3px 0 15px rgba(0,0,0,0.2);
+    scrollbar-width: none;
 }
 
 .nav.open {
@@ -27,13 +28,14 @@
     padding: 15px 20px;
     text-decoration: none;
     font-size: 18px; /* Slightly larger font for readability */
-    color: #ffffff;
+    color: black;
     display: block;
     transition: background-color 0.3s, color 0.3s; /* Smooth transitions for hover effects */
 }
 
 .nav ul a:hover {
-    background-color: #4caf50; /* A fresh green hover effect */
+    /* background-color: #4caf50; */
+    background-color: #b1b0b0; 
     color: #000000; /* Text color changes to black for contrast */
 }
 
@@ -44,30 +46,44 @@
     z-index: 2;
     cursor: pointer;
     padding: 10px 20px;
-    background-color: #333;
+    /* background-color: #333; */
     color: white;
+    background-color: white;
     border: none;
-    border-radius: 20px; /* Rounded corners for the button */
+    border-radius: 100px; /* Rounded corners for the button */
     font-size: 16px;
     transition: background-color 0.3s; /* Smooth transition for hover */
 }
 
 .menu-button:hover {
-    background-color: #555; /* Darker shade when hovered */
+    background-color: #555; 
 }
 
 
 .site-title {
     font-size: 30px;
-    padding-left: 20px;  /* Adjust this to match the left padding of your list items if needed */
+    padding-left: 20px;  
     text-decoration: none;
-    color: white;
+    color: black;
     display: block;
     white-space: nowrap;
     overflow: hidden;
-    padding: 10px 20px;  /* Adjust top/bottom padding to vertically center and match list items */
-    margin-top: 0;  /* Ensures there's no additional top margin */
+    padding: 10px 20px;  
+    margin-top: 0;  
 }
 
+.menu-selector {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    
+}
+
+.menu-button .menu-selector{
+    align-items: center;
+    
+}
 
 

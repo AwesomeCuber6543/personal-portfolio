@@ -1,17 +1,17 @@
 // import logo from './logo.svg';
-import Navbar from './Navbar';
-import Home from './Home';
+import Homepage from './Homepage';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 function App() {
   return (
     <div className='App'>
-      <div className='Home'>
+      {/* <div className='Home'>
         <Home/>
       </div>
       <div className="Navbar">
         <Navbar/>
-      </div>
+      </div> */}
+      <Homepage/>
     </div>
   );
 }
