@@ -13,7 +13,7 @@ const Education = () => {
         {
             school: "Plano West Senior High School",
             year: "2020-2022",
-            description: "Focused on foundational IT skills and software development principles.",
+            description: "",
             image: "PlanoWestLogo.png" // Ensure you have this image in your public folder or correctly linked
         }
     ];

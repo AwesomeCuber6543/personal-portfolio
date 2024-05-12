@@ -4,17 +4,43 @@
 
 body {
   margin: 0;
-  justify-content: center;
-  align-items: center;
+}
+
+
+/* .nav {
   display: flex;
-}
-
-
-
-
-.Home{
   align-items: center;
+  justify-content: space-between;
+  background-color: #df0909;
+  padding-right: 20px;
 }
+
+.nav ul {
+  display: 'flex';   
+  margin: 0;            
+  padding: 0;
+  list-style: none; 
+}
+
+.nav li {
+  display: flex;
+  float: right;
+  font-size: 20px;
+  padding: 15px;
+  color: blue;
+}
+
+.nav a{
+  text-decoration: none;
+  color: yellow;
+}
+
+.site-title{
+  font-size: 30px;
+  padding-left: 20px;
+  text-decoration: none;
+} */
+
 
 
 @media (prefers-reduced-motion: no-preference) {

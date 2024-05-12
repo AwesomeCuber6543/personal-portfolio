@@ -2,13 +2,18 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: center;
     padding: 20px;
+}
+.experience-container .page-title{
+    margin-bottom: 50px;
 }
 
 .experience-entry {
     display: flex;
     position: relative;
     margin-bottom: 20px;
+    margin-left: 30%;
 }
 
 .timeline-point {

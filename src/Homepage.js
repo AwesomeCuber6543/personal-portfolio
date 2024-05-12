@@ -4,26 +4,27 @@ import './Navbar.css'
 import './Home2.css'
 import styled from 'styled-components';
 import {Link, Route, Routes} from 'react-router-dom'
-import { FaCode, FaDesktop, FaBook } from 'react-icons/fa';
+import { FaCode, FaDesktop, FaBook, FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import Education from './Education';
 import Accomplishments from './Accomplishments';
 import Research from './Research';
 import Experience from './Experience';
 import ProjectPage from './Projects';
+import AboutMe from './AboutMe';
 
 
 const projects = [
   {
       title: "NeuroNavigate",
       subtitle: "UMD Bitcamp Winner",
-      image: "/GMULogo.png",
+      image: "/NeuroNavigate.png",
       date: "January 2021",
       description: "Description of Project One..."
   },
   {
-    title: "Project One",
-    subtitle: "Subtitle One",
-    image: "Hamburger_icon.png",
+    title: "Teach.ai",
+    subtitle: "HackMIT Finalist",
+    image: "teachai.png",
     date: "January 2021",
     description: "Description of Project One..."
 },
@@ -69,6 +70,17 @@ const Navbar = () => {
                     <li><Link to='/Experience'>Experience</Link></li>
                     <li><Link to='/Education'>Education</Link></li>
                 </ul>
+                <div className="social-icons">
+                <a href="https://github.com/AwesomeCuber6543" target="_blank" rel="noopener noreferrer">
+                  <FaGithub />
+                </a>
+                <a href="https://www.linkedin.com/in/yasalman/" target="_blank" rel="noopener noreferrer">
+                  <FaLinkedin />
+                </a>
+                <a href="mailto:salmanyahia04@gmail.com">
+                  <FaEnvelope />
+                </a>
+              </div>
             </nav>
         </div>
     );
@@ -113,14 +125,13 @@ const Home2 = () => {
           Yahia Salman
         </div><br/>
           <div className="titles">-&nbsp;
-            <span className='Developer'>
-            Developer
+            <span className='Developer'><Link to='/Projects'>Developer</Link>
             </span>&nbsp;
             <span className='Researcher'>|
-            Researcher
+            <Link to='/Research'>&nbsp;Researcher</Link>
             </span>&nbsp;
             <span className='Innovator'>|
-            Innovator
+            <Link to='/Accomplishments'>&nbsp;Innovator</Link>
             </span>  
           </div>
       </div>
@@ -128,27 +139,6 @@ const Home2 = () => {
   }
 
 
-  // const Projects = () => {
-  //   return (
-  //     <div className="projects-container">
-  //         {projects.map((project, index) => (
-  //             <ProjectCard
-  //                 key={index}
-  //                 title={project.title}
-  //                 subtitle={project.subtitle}
-  //                 image={project.image}
-  //                 date={project.date}
-  //                 description={project.description}
-  //             />
-  //         ))}
-  //         <div className="view-all-button-container">
-  //             <Link to="/Projects" className="view-all-button">View All Projects</Link>
-  //         </div>
-  //     </div>
-  //   );
-  // };
-
-  // In your Projects component
 const Projects = () => {
   return (
       <div>
@@ -178,6 +168,7 @@ const Projects = () => {
 
 
 
+
   
   
 
@@ -188,7 +179,8 @@ const Projects = () => {
       <div className="Yup">
         <Home2 /> 
 
-        <Projects />
+        {/* <Projects /> */}
+        <AboutMe />
         
         {/* <Research/> */}
       </div>
